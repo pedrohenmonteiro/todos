@@ -1,0 +1,38 @@
+import { createGlobalStyle } from "styled-components";
+
+export const GlobalStyles = createGlobalStyle`
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #dddaeb;
+}
+
+body, input, textarea, button {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+html {
+  @media (max-width: 1080px) {
+    font-size: 93.75%;
+  }
+
+  @media (max-width: 720px) {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  background: #04000a;
+  
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+`
